@@ -115,9 +115,9 @@ if __name__ == "__main__":
     tokenizer = AutoTokenizer.from_pretrained(args.model,use_fast=True,unk_token="<unk>",bos_token="<s>",eos_token="</s>",add_bos_token=False)
     model = AutoModelForCausalLM.from_pretrained(args.model,device_map='auto')
     
-    STOP.append(tokenizer(".")[0])  #stop decoding when seeing '.'
-    SURE.append(tokenizer("sure")[0])
-    UNSURE.append(tokenizer("unsure")[0])
+    STOP.append(tokenizer(".")['input_ids'][0])  #stop decoding when seeing '.'
+    SURE.append(tokenizer("sure")['input_ids'][0])
+    UNSURE.append(tokenizer("unsure")['input_ids'][0])
 
     results = []
     data = {}
