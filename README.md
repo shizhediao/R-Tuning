@@ -1,5 +1,5 @@
-# <img src="./figures/icon.png" alt="image" width="60" height="auto">  R-Tuning: Teaching Large Language Models to Refuse Unknown Questions
-This is the official repo for [R-Tuning: Instructing Large Language Models to Say 'I Don't Know'](https://arxiv.org/abs/2311.09677)
+# <img src="./figures/icon.png" alt="image" width="60" height="auto">  R-Tuning: Teaching Large Language Models to Say 'I Don't Know'
+This is the official repo for the NAACL 2024 paper [R-Tuning: Instructing Large Language Models to Say 'I Don't Know'](https://arxiv.org/abs/2311.09677)
 
 ## Introduction 
 A predominant issue of Large language models (LLMs) is the propensity to generate non-existent facts, a concern termed *hallucination*.
