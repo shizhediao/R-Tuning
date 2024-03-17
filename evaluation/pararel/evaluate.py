@@ -77,8 +77,8 @@ if __name__ == "__main__":
     model = AutoModelForCausalLM.from_pretrained(args.model,device_map='auto')
     
     STOP.append(tokenizer(".")[0])  #stop decoding when seeing '.'
-    SURE.append(tokenizer("sure")[0])
-    UNSURE.append(tokenizer("unsure")[0])
+    SURE.append(tokenizer("sure")['input_ids'][0])
+    UNSURE.append(tokenizer("unsure")['input_ids'][0])
 
     data = []
     with open(f"../../R-Tuning-data/pararel/{args.domain}_test_pararel.json",'r') as f:
