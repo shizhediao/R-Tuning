@@ -90,6 +90,12 @@ python evaluate.py \
 --result ParaRel_openllama_3b
 ```
 
+After receiving the result, please run the following command for Average Precision (AP) score evaluation:
+```sh
+cd results
+python calculate_ap.py --result ParaRel_openllama_3b.json
+```
+
 ## Citation
 
 If you use or extend our work, please cite the following [paper](https://arxiv.org/abs/2311.09677):
