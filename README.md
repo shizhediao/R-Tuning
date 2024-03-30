@@ -83,7 +83,7 @@ Here is an example to evaluate the `open_llama_3b` model on 'ParaRel' dataset.
 
 Please replace `--model` with any R-Tuning models.
 ```sh
-cd ~/evaluation/ParaRel
+cd ~/evaluation/pararel
 python evaluate.py \
 --model openlm-research/open_llama_3b \
 --domain ID \
