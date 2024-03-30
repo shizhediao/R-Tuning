@@ -26,7 +26,7 @@ def inference(input_text):
             )
     logits = outputs['scores']
     output_sequence = []
-    product = 1
+    product = torch.tensor(1.0, device='cuda:0')
     count = 0
     for i in logits:        #greedy decoding and calculate the confidence
         pt = torch.softmax(torch.Tensor(i[0]),dim=0)
