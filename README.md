@@ -81,13 +81,19 @@ cd ~/LMFlow
 
 Here is an example to evaluate the `open_llama_3b` model on 'ParaRel' dataset.
 
-Please replace `--model_name_or_path` with any R-Tuning models.
+Please replace `--model` with any R-Tuning models.
 ```sh
-cd ~/evaluation
-python run_pararel.py \
+cd ~/evaluation/pararel
+python evaluate.py \
 --model openlm-research/open_llama_3b \
 --domain ID \
 --result ParaRel_openllama_3b
+```
+
+After receiving the result, please run the following command for Average Precision (AP) score evaluation:
+```sh
+cd results
+python calculate_ap.py --result ParaRel_openllama_3b.json
 ```
 
 ## Citation
