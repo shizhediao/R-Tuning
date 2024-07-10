@@ -1,5 +1,9 @@
 # <img src="./figures/icon.png" alt="image" width="60" height="auto">  R-Tuning: Teaching Large Language Models to Say 'I Don't Know'
-This is the official repo for the NAACL 2024 paper [R-Tuning: Instructing Large Language Models to Say 'I Don't Know'](https://arxiv.org/abs/2311.09677)
+
+🏆 R-Tuning receives the **Outstanding Paper Award** at **NAACL 2024**. 🎉 
+
+This is the official repo for the NAACL 2024 paper [R-Tuning: Instructing Large Language Models to Say 'I Don't Know'](https://arxiv.org/abs/2311.09677).
+
 
 ## Introduction 
 A predominant issue of Large language models (LLMs) is the propensity to generate non-existent facts, a concern termed *hallucination*.
@@ -100,12 +104,26 @@ python calculate_ap.py --result ParaRel_openllama_3b.json
 
 If you use or extend our work, please cite the following [paper](https://arxiv.org/abs/2311.09677):
 ```
-@misc{zhang2023rtuning,
-      title={R-Tuning: Teaching Large Language Models to Refuse Unknown Questions}, 
-      author={Hanning Zhang and Shizhe Diao and Yong Lin and Yi R. Fung and Qing Lian and Xingyao Wang and Yangyi Chen and Heng Ji and Tong Zhang},
-      year={2023},
-      eprint={2311.09677},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{zhang-etal-2024-r,
+    title = "{R}-Tuning: Instructing Large Language Models to Say {`}{I} Don{'}t Know{'}",
+    author = "Zhang, Hanning  and
+      Diao, Shizhe  and
+      Lin, Yong  and
+      Fung, Yi  and
+      Lian, Qing  and
+      Wang, Xingyao  and
+      Chen, Yangyi  and
+      Ji, Heng  and
+      Zhang, Tong",
+    editor = "Duh, Kevin  and
+      Gomez, Helena  and
+      Bethard, Steven",
+    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.naacl-long.394",
+    pages = "7113--7139",
 }
 ```
